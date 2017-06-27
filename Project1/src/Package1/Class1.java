@@ -23,7 +23,7 @@ public class Class1 {
 	{
 	   System.setProperty("webdriver.firefox.marionette", "C:\\geckodriver.exe");	
        WebDriver driver=new FirefoxDriver();
-       //driver.get("http://gmail.com");
+       driver.get("http://gmail.com");
        
        //RIGHT CLICK
       /* WebElement el=driver.findElement(By.linkText("Help"));
@@ -72,29 +72,7 @@ public class Class1 {
        
        
        //===========================
-       driver.get("http://www.choice-fm.co.uk/");
 
-     //Build webElement object to contain menu link xpath for all the mainmenu links
-     WebElement HomeLink = driver.findElement(By.xpath("//*[@id='globalNav']/ul/li[1]/a"));
-     WebElement ShowsLink = driver.findElement(By.xpath("//*[@id='globalNav']/ul/li[2]/a"));  
-     WebElement MusicLink = driver.findElement(By.xpath("//*[@id='globalNav']/ul/li[3]/a"));
-     WebElement EventsLink = driver.findElement(By.xpath("//*[@id='globalNav']/ul/li[6]/a"));
-
-     //Create an action object called myMouse
-     Actions myMouse = new Actions(driver);
-
-     //there is a slight delay before each mouse movement hence the "Thread.sleep" statement
-     myMouse.moveToElement(ShowsLink).build().perform();   //Shows link
-     Thread.sleep(5000L);
-     myMouse.moveToElement(HomeLink).build().perform();   //home link
-     Thread.sleep(5000L);
-     myMouse.moveToElement(MusicLink).build().perform();   //Music link
-     Thread.sleep(5000L);
-     myMouse.moveToElement(EventsLink ).build().perform();   //Events link
-     Thread.sleep(5000L);
-     myMouse.moveToElement(HomeLink).build().perform();   //Home link
-     Thread.sleep(5000L);
-     myMouse.moveToElement(ShowsLink).build().perform();
        
        
        
