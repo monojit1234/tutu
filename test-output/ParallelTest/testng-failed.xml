@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ParallelTest]" parallel="tests">
+  <test name="IE(failed)" parallel="tests">
+    <parameter name="Browser" value="IE"/>
+    <classes>
+      <class name="Testng.ParallelBrowser">
+        <methods>
+          <include name="GoogleTitle"/>
+          <include name="Browser"/>
+        </methods>
+      </class> <!-- Testng.ParallelBrowser -->
+    </classes>
+  </test> <!-- IE(failed) -->
+</suite> <!-- Failed suite [ParallelTest] -->
